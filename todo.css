@@ -1,0 +1,128 @@
+:root {
+    /* violet */
+    --primary-color: 111, 76, 255;
+    
+    /* white */
+    --text-color: 256, 256, 256;
+  }
+.btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    padding: 12px 32px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    float: right ;
+  }
+  
+.btn:hover {
+    transition: all 0.3s ease;
+  }
+  
+.btn-primary {
+    background-color: rgb(var(--primary-color));
+    border: 1px solid rgb(var(--primary-color));
+    color: rgb(var(--text-color));
+  }
+
+.btn-gradient-border {
+    color: rgba(var(--text-color));
+    border: 2px double transparent;
+        background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1e1e2f; /* Darker background for better glow visibility */
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #2e2e3e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff6347; /* Glow effect for the title */
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #3e3e4e;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Glow effect for buttons */
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #3e3e4e;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6); /* Subtle glow for list items */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+li:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 127, 0.8); /* Stronger glow on hover */
+    transform: scale(1.05);
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8); /* Glow effect for delete links */
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 1);
+}
+
